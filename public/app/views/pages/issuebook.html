@@ -1,0 +1,15 @@
+
+<div class="container" ng-controller="IssueBookController as book">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-md-offset-4">
+				<h1>Signup!</h1>
+				<form  class="form-sigin" method="post" ng-submit="book.issueBook()">
+					Name: <input type="text" name="name" class="form-control" ng-model="book.empData.name">
+					bookname: <input type="text" name="bookname" class="form-control" ng-model="book.empData.bookname">
+					employee id: <input type="text" name="empid" class="form-control" ng-model="book.empData.empid">
+                    Issue Date: <input type="date" name="issuedate" class="form-control" ng-model="book.empData.issuedate">
+					<button type="submit" class="btn btn-danger">Issue</button>
+				</form>
+			</div>
+		</div>
+</div>

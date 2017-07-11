@@ -1,0 +1,22 @@
+<div class="container" ng-controller="BookController as book">
+  <h2>The Books Issued by the Employee</h2>
+            
+  <table class="table table-condensed" ng-repeat="detail in book.details">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Bookname</th>
+        <th>Employee Id</th>
+          <th>Date of Issue</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{detail.name}}</td>
+        <td>{{detail.bookname}}</td>
+        <td>{{detail.empid}}</td>
+        <td>{{detail.issuedate}}</td>  
+      </tr>
+    </tbody>
+  </table>
+</div>
